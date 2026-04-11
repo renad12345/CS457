@@ -1,54 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>contact</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ececec;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
 
-<body id="top">
-<header role="banner">
-    <h1>My Personal Website</h1>
-    <h2>Renad Aljarallah</h2>
-</header>
+header{
+    background-color: darkcyan;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
 
-<nav role="navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+nav{
+    background-color: #007171;
+    padding: 1rem;
+}
 
-<main role="main">
-    <h2 class="highlight">Contact Me</h2>
-    <h3>Fill in your information</h3>
-    <form action="#" method="POST">
-        <label>Name <input type="text" name="Name" maxlength="24"></label>
-        <br>
-        <label>Email <input type="email" name="Email"></label>
-        <br>
-        <label>Message <textarea name="entry" rows="6" cols="64"></textarea></label>
-        <br>
-        <input type="submit">
-        <input type="reset" value="Start over">
-        <br>
-        <a href="mailto:renad1750@gmail.com">Email ME</a>
-    </form>
-</main>
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-<footer role="contentinfo">
-    <p>2026 Renad Aljarallah | CSC457 HW</p>
+nav li{
+    display: inline-block;
+    margin: 0 1rem;
+}
 
-    <p>
-        <a href="mailto:renad1750@gmail.com">Email ME</a>
-    </p>
+a{
+    color: #3939c5;
+}
 
-    <p>
-        <a href="#top">Back to Top</a>
-    </p>
-</footer>
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1.5em;
+    letter-spacing: 0.2em;
+    word-spacing: 2em;
+}
 
-</body>
-</html>
+a:hover{
+    color: #fffb00;
+}
+
+main{
+    width: 80%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5em;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: .1em .1em .5em silver;
+    text-transform: capitalize;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 1.4em;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ol{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+dl{
+    background-color: #f3f3f3;
+    padding: 1rem;
+    letter-spacing: 0.2em;
+    word-spacing: 0.1em;
+    border-left: 4px solid darkcyan;
+}
+
+.highlight{
+    background-color: #989898;
+    color: white;
+    text-align: center;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+#intro{
+    border: 2px solid darkcyan;
+    padding: 1rem;
+    background-color: #eefaf8;
+}
+
+section, article{
+    margin: 1.5em 0;
+    padding: 1.5em;
+    border: 1px solid gray;
+}
+
+footer{
+    background-color: darkcyan;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #fffb00;
+}
+
+img{
+    max-width: 100%;
+    border: 2px solid gray;
+}
+
+figure{
+    text-align: center;
+}
+
+figcaption{
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+form{
+    word-spacing: 0.4em;
+    margin-top: 1rem;
+}
+
+input, textarea{
+    width: 100%;
+    max-width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+input[type="submit"], input[type="reset"]{
+    width: auto;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
