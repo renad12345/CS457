@@ -24,10 +24,10 @@
 <main role="main">
     <h2 class="highlight">Contact Me</h2>
     <h3>Fill in your information</h3>
-    <form action="#" method="POST">
-        <label>Name <input type="text" name="Name" maxlength="24"></label>
+    <form onsubmit="return validateForm()" action="#" method="POST">
+        <label>Name <input type="text" id="name" name="Name" maxlength="24"></label>
         <br>
-        <label>Email <input type="email" name="Email"></label>
+        <label>Email <input type="email" id="email" name="Email"></label>
         <br>
         <label>Message <textarea name="entry" rows="6" cols="64"></textarea></label>
         <br>
@@ -50,5 +50,6 @@
     </p>
 </footer>
 
+<script src="scripts.js"></script>
 </body>
 </html>
