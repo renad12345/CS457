@@ -25,11 +25,12 @@
     <h2 class="highlight">My Projects</h2>
     <article>
         <h3>Wister Restaurant DB System</h3>
-        <p>Developed the Cashier module to search and manage orders and customers via Swing UI, built SQL joins
+        <p id="disc1">Developed the Cashier module to search and manage orders and customers via Swing UI, built SQL joins
             displayed in JTable, and implemented update/delete using PreparedStatement.</p>
+        <button onclick="toggleDesc('disc1')">Show/Hide</button>
         <time datetime="2025-09-05T01:11:00">Sept.5, 2025, 1:11a.m.</time>
         <figure>
-            <img src="images/Wister.jpeg" alt="Wister logo" width="200">
+            <img src="images/Wister.jpeg" alt="Wister logo" width="450">
             <figcaption>Fig.1 - Wister logo.</figcaption>
         </figure>
         <p>
@@ -39,11 +40,12 @@
 
     <article>
         <h3>Seam Carving Image Resizer</h3>
-        <p>Implemented energy-based seam removal and compared DP, Greedy, and Brute Force seam search to resize images
+        <p id="disc2">Implemented energy-based seam removal and compared DP, Greedy, and Brute Force seam search to resize images
             to a user-defined width.</p>
+        <button onclick="toggleDesc('disc2')">Show/Hide</button>
         <time datetime="2025-11-05T01:11:00">Nov.5, 2025, 1:11a.m.</time>
         <figure>
-            <img src="images/carvedImage.jpeg" alt="image carved with seam carving algorithm" width="450">
+            <img src="images/Seam.jpeg" alt="image carved with seam carving algorithm" width="450">
             <figcaption>Fig.2 - Seam Carved Image.</figcaption>
         </figure>
         <p>
@@ -65,5 +67,6 @@
     </p>
 </footer>
 
+<script src="scripts.js"></script>
 </body>
 </html>
